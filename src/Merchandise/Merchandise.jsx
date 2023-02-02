@@ -41,7 +41,7 @@ const Merchandise = () => {
           <p>An exclusive range of TEDxNITD high-quality merchandise to inspire and remind you of the event.</p>
           <p>Available to order online for delivery directly to you or to the collection at the event if you are attending on Date. Items are in limited stock and are available subject to the availability</p>
         </div>
-        <hr className='line' />
+       
 
         <div className='Card'>
           {contents.map(contents => (

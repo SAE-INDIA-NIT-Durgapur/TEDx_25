@@ -1,7 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Sarabun:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 .Members-heading{
   font-family: 'Anton', sans-serif;
@@ -64,19 +64,19 @@ text-shadow: -1px 1px 0 #ffffff,
   }
 
   .text-wrapper{
-    font-family: 'Sarabun', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 
   }
 
   .container .inner .text-wrapper {
     width: 90%;
-    color: #ffffff;
+    color: #000000;
     margin-top: 50%;
   }
-  /* .container .inner .text-wrapper h1 {
-    color: #ffffff;
-    margin: 0%;
-  } */
+   .text-wrapper>h1 {
+   
+    font-size: 3rem;
+  } 
   .container .inner .text-wrapper p {
     color: #ffffff;
     font-size: 0.8rem;
@@ -131,9 +131,18 @@ text-shadow: -1px 1px 0 #ffffff,
 	position: fixed;
 	top: 0;
 }
+
+@media(max-width:650px){
+  .hero-inner{
+    display: none;
+  }
+}
 .hero-title{
 	display: table-cell;
-	vertical-align: middle;	
+	position: absolute;
+  left:0;
+  right: 0;
+  bottom: 10%;	
 	text-align: center;
 }
 .hero-title>h1{
@@ -165,11 +174,14 @@ text-shadow: -1px 1px 0 #ffffff,
 	left: 50%;
 	transform: translateX(-50%);
   cursor: pointer;
+  transition: all 0.5s ease;
+  font-size: 1.5rem;
 }
 .sd:hover, .sd:focus{
 	color: #fff;
-	opacity: .7;
+	opacity: 1;
 	text-decoration: none;
+ text-decoration: underline;
 }
 @media (max-width: 600px) {
   /* styles for mobile view */

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import tedxnit from "./tedxnitdgp.png"
 import "./Navbar.css";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="tedNavbar">
-      <span className="nav-logo">TedxNITDurgapur</span>
+        <span className="nav-logo"><img src={tedxnit} /></span>
       <div className={`nav-items ${isOpen && "open"}`}>
       <a href="/">Home</a>
 

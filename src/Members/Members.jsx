@@ -44,7 +44,7 @@ function Members() {
 			<div class="hero-title">
 				<h1 class="text-light title font-2">Meet Our Team</h1>
 			</div>
-      <div className="sd" onClick={handleClick}>Click me</div>
+      <div className="sd" onClick={handleClick}>Click Me</div>
 	</div>
 </div>
        

@@ -6,12 +6,14 @@ import Members from './Members/Members'
 import Merchandise from './Merchandise/Merchandise'
 import Speakers from './Speakers/Speakers'
 import Sponsors from './Sponsors/Sponsors'
+import Navbar from './Navbar/Navbar';
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
+          {/* <Navbar/> */}
           <Route path="/" element={<Home/>}/>
           <Route path="/gallery" element={<Gallery/>}/>
           <Route path="/members" element={<Members/>}/>
