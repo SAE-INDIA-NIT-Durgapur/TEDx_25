@@ -8,6 +8,9 @@ import doritos from "./doritos.png"
 import { useEffect } from 'react'
 import { useAnimation, motion } from 'framer-motion'
 import { useInView } from "react-intersection-observer";
+import Navbar from '../Navbar/Navbar';
+
+
 export default function Sponsors() {
    const { ref, inView } = useInView(
      {  threshold:0.2 }
@@ -25,7 +28,10 @@ export default function Sponsors() {
       
    }, [inView]);
    return (
+      <>
+      <Navbar/>
       <div className="main-section">
+         
          <div>
             <motion.span initial={{ y: -200 }} animate={{ y: -2 }} className="heading"> CURRENT SPONSORS</motion.span>
             <div classname="section1">
@@ -107,6 +113,6 @@ export default function Sponsors() {
             </div>
          </div>
       </div>
-
+</>
    )
 }

@@ -7,117 +7,80 @@
   background-color: #030303;
 }
 .Items{
-    background: url(../Pictures/pic1.jpeg)   no-repeat;
+    /* background: url(../Pictures/Organizers\ .png)   no-repeat; */
+    background-color: #030303;
+    color: #fff;
     height: 50vh;
     top: 0px;
     right: 0px;
     left: 0px;
     background-size: cover;
     background-position: center center;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
+    text-align: center;
     border: 1px solid black;
 }
 
 /*Design of the Merchandise Area*/
 
-.bg-text{
-  top: 2rem;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 30%;
-  padding:0;
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
+
+
+.text-container {
+  display: flex;
+/*   border:1px solid red; */
+  height: 100%;
+  align-items: center;
+ 
 }
 
-
-
-.text{
-  width: 300px;
-  height: 56px;
-  font-size: 30px;
-  font-family: 'Playfair Display SC', serif;
-  background: linear-gradient(45deg, transparent 5%, #ff1515 5%);
-  border: 0;
-  color: #fff;
-  letter-spacing: 2px;
-  box-shadow: 6px 0px 0px #00E6F6;
-  outline: transparent;
-}
-@media (max-width:700px){
-  .bg-text{
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 40%;
-    }
-  }
-   @media (max-width:500px){
-  .bg-text{
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 40%;
-    }
-  
-  .text { 
-    width: 200px;
-    height: 46px;
-   font-size: 20px;
-  }
-  }
-
-@media (max-width:380px){
-  .bg-text{ 
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 40%;
-  }
-  .text {
-    
-    width: 150px;
-    height: 40px;
-   font-size: 15px;
-
-  }
-  } 
-  
-
-
-.text::after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-  
-  content: 'MERCHANDISE';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
-  clip-path: var(--slice-0);
+svg {
+    display: block;
+    font: 9em 'Montserrat';
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
 }
 
-.text:hover::after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
 }
 
-@keyframes glitch {
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #fefdfd;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+/* @keyframes glitch {
   0% {
     clip-path: var(--slice-1);
     transform: translate(-20px, -10px);
@@ -162,7 +125,7 @@
     clip-path: var(--slice-1);
     transform: translate(0);
   }
-}
+} */
 
 
 
@@ -209,6 +172,7 @@ p{
   grid-template-columns: repeat(auto-fit,minmax(18rem,23rem));
   justify-content: center;
   gap:1rem;  
+  z-index: 1;
 }
 @media(max-width:450px){
   .Card{
@@ -242,18 +206,16 @@ p{
  
  
 }
-
-
 .productName{
   font-size: 1.5rem;
   padding: 1rem;
   text-align: center;
 }
-.productCard:hover{
+/* .productCard:hover{
   transform: scale(0.9, 0.9);
   box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
     -5px -5px 30px 15px rgba(0,0,0,0.22);
-}
+} */
 
 
 
@@ -264,16 +226,6 @@ p{
 }
 
 
-.fa-cart-shopping{
-  position: absolute;
-  right: 0;
-  margin: 1rem;
-  font-size: 2rem;
-  transition: 0.2s;
-  cursor: pointer;
-  z-index: 5;
-  color: rgb(102, 102, 102);
-}
 
 
 /*-------------------------------------------------------------------------------------------*/
@@ -282,74 +234,57 @@ p{
   text-align: center;
   margin-top: 30px;
   
+  
 }
 
-.btn {
-  letter-spacing: 0.1em;
-  margin: 0 auto;
-  background-color: #f50136;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 45px;
-  max-width: 500px;
-  text-decoration: none;
+
+
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.button {
+  width: 30%;
+  height: 55px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
   text-transform: uppercase;
-  width: 80%;
-  margin-bottom: 20px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: rgb(196, 19, 19);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 2rem;
+  }
+
+.button:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 15px 20px rgba(229, 58, 46, 0.4);
+  color: rgb(3, 3, 3);
+  transform: translateY(-7px);
 }
-.btn:hover {
-  text-decoration: none;
-}
-
-
-.effect04 {
-  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
-  display: var(--uismLinkDisplay);
-  color: rgb(255, 255, 255);
-  outline: solid  1px rgb(255, 255, 255);
-  position: relative;
-  transition-duration: 0.4s;
-  overflow: hidden;
-}
-
-.effect04::before,
-.effect04 span{
-    margin: 0 auto;
-	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-	transition-duration: 0.4s;
-}
-
-
-.effect04:hover{
-
-  background-color: #f50136;
+@media(max-width:400px) {
+  .button {
+    font-size: 15px;
+  }
+  
 }
 
 
-.effect04:hover span{
-  -webkit-transform: translateY(-400%) scale(-0.1,20);
-          transform: translateY(-400%) scale(-0.1,20);
-}
 
 
-.effect04::before{
-  content: attr(data-sm-link-text);
-	color: #FFF;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  -webkit-transform: translateY(500%) scale(-0.1,20);
-          transform: translateY(500%) scale(-0.1,20);
-}
 
 
-.effect04:hover::before{
-  letter-spacing: 0.05em;
-  -webkit-transform: translateY(0) scale(1,1);
-          transform: translateY(0) scale(1,1);
-}
 
 
 
@@ -366,6 +301,7 @@ left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
 position: relative;
+z-index: 1;
 }
 
 
