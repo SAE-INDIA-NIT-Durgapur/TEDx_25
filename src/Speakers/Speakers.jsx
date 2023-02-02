@@ -1,7 +1,13 @@
 import React from 'react'
+import Navbar from '../Navbar/Navbar'
 
-export default function Speakers() {
+const Speakers = () => {
   return (
-    <div>Speakers</div>
+    <div>
+      <Navbar/>
+      Speakers
+    </div>
   )
 }
+
+export default Speakers

@@ -1,7 +1,7 @@
-*{
-    background:#000 !important;
+.main-section{
+    background-color: black;
+    align-items: center;
 }
-
 .decoration1{
     position: absolute;
     left:-30px;
