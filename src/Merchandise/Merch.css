@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,600&family=Roboto:wght@300&display=swap');
-
+body{
+  background-color: #030303;
+}
 
 .page-contain{
   background-color: #030303;
@@ -167,12 +169,13 @@ p{
 /*--------------------------------------------------------------------------------------------*/
 /*Card Design*/
 .Card{
-  margin-top: 5rem;
+  margin-top: 0rem;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(18rem,23rem));
   justify-content: center;
-  gap:1rem;  
+  gap:5rem;  
   z-index: 1;
+  padding-bottom: 2rem;
 }
 @media(max-width:450px){
   .Card{
@@ -199,7 +202,7 @@ p{
 
 .productImage{
   
-  height: 15rem;
+  height: 25rem;
   width: 100%;
   object-fit: cover;
   align-items: center;
