@@ -16,7 +16,6 @@ import AS3 from "./AS3.png";*/
 const Sponsors = () => {
   const [animationClass, setAnimationClass] = useState('');
 
-  // Using useEffect to trigger animation when the component is mounted
   useEffect(() => {
     setAnimationClass('fadeIn');
   }, []);
