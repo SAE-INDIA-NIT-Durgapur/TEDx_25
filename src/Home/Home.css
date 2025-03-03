@@ -1,0 +1,96 @@
+.home-page {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+}
+
+.home-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column-reverse;
+  margin: 0 auto;
+}
+
+.home-carousel-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-carousel-wrapper {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  max-width: 28rem;
+  overflow: hidden;
+}
+
+.home-content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.home-tedx-header {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #e62b1e;
+  margin-bottom: 0;
+}
+
+.home-tedx-subheader {
+  font-size: 3vw;
+  color: #e62b1e;
+  border-bottom: none;
+  padding: 0;
+  padding-left: 1vw;
+}
+
+.home-tedx-description {
+  max-width: 28rem;
+}
+
+.home-para{
+  color: #d1d5db;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    flex-direction: row;
+  }
+
+  .home-carousel-container,
+  .home-content-container {
+    width: 50%;
+  }
+
+  .home-content-container {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .home-tedx-header {
+    font-size: 4rem;
+    margin-bottom: -1rem;
+  }
+  .home-tedx-subheader {
+      font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-tedx-header {
+    font-size: 6rem;
+  }
+}
