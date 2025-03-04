@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '../Navbar/Navbar';
 import './Members.css';
+import Footer from '../Footer/Footer';
 
 function Members() {
   const handleClick = () => {
@@ -121,6 +122,7 @@ function Members() {
     </div>
     <h1 className='Members-heading'>Tech Team</h1>
     </div>
+    <Footer/>
 
     </>
   )

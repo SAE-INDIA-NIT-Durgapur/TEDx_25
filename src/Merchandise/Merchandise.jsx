@@ -5,7 +5,7 @@ import { Products } from "./components/product";
 import SizeChart from "./components/SizeChart";
 import { contents } from "./contents";
 import "./Merch.css";
-
+import Footer from "../Footer/Footer";
 const Merchandise = () => {
   return (
     <>
@@ -56,6 +56,7 @@ const Merchandise = () => {
         <SizeChart />
         <PriceTable />
       </div>
+    <Footer/>
     </>
   );
 };

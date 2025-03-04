@@ -7,7 +7,7 @@ import MP2 from "./MP2.png";
 import FP1 from "./FP1.png";
 import FP2 from "./FP2.png";
 import FP3 from "./FP3.png";
-
+import Footer from '../Footer/Footer';
 /*import MP2 from "./MP2.png";
 import MP3 from "./MP3.png";
 import MP1 from "./MP1.png";
@@ -22,6 +22,7 @@ const Sponsors = () => {
   }, []);
 
   return (
+    <>
     <Navbar />
     <div className={`sponsors-container ${animationClass}`}>
       <h1 className="sponsors-heading">OUR SPONSORS</h1>
@@ -72,6 +73,8 @@ const Sponsors = () => {
         <div className="animated-line"></div>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

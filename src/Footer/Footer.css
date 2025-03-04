@@ -1,0 +1,135 @@
+.footer-tedx {
+    background-color: black;
+    color: white;
+    padding: 1.5rem 1rem;
+  }
+  
+  .container-tedx {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-main-tedx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .footer-section-tedx {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .footer-logo-tedx {
+    font-weight: bolder;
+    font-size: 10vw;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tedx-text-tedx {
+    color: #e53e3e;
+  }
+  
+  .nit-text-tedx {
+    color: white;
+  }
+  
+  .footer-tagline-tedx {
+    font-size: 0.875rem;
+    color: #a0aec0;
+  }
+  
+  .section-title-tedx {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: red;
+    
+  }
+  
+  .footer-nav-tedx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer-link-tedx {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-link-tedx:hover {
+    color: #e53e3e;
+  }
+  
+  .location-container-tedx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .location-text-tedx {
+    font-size: 0.875rem;
+  }
+  
+  .contact-section-tedx {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #2d3748;
+  }
+  
+  .contact-container-tedx {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  
+  .email-link-tedx {
+    font-size: 0.875rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .email-link-tedx:hover {
+    color: #e53e3e;
+  }
+  
+  .copyright-tedx {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #718096;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .footer-main-tedx {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .footer-logo-tedx{
+        font-size: 3vw;
+    }
+  
+    .footer-section-tedx {
+      width: 33.333%;
+    }
+  
+    .logo-section-tedx {
+      text-align: left;
+    }
+  
+    .links-section-tedx {
+      text-align: center;
+    }
+  
+    .location-section-tedx {
+      text-align: right;
+    }
+  }
+  

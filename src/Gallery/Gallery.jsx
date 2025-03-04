@@ -13,6 +13,7 @@ import pic4 from "../Components/Images/Gallery/pic4.JPG";
 import pic3 from "../Components/Images/Gallery/pic3.JPG";
 import pic2 from "../Components/Images/Gallery/pic2.JPG";
 import pic1 from "../Components/Images/Gallery/pic1.JPG";
+import Footer from "../Footer/Footer";
 
 // Image array
 const importedImages = [
@@ -45,6 +46,7 @@ export default function Gallery() {
           </div>
         </div>
       )}
+      <Footer/>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import './Speakers.css'
 import Navbar from '../Navbar/Navbar';
-
+import Footer from '../Footer/Footer';
 const Speakers = () => {
   return (
     <div>
@@ -82,6 +82,7 @@ const Speakers = () => {
     </div>
   </div>
     </motion.div>
+    <Footer/>
     </div>
   )
 }
