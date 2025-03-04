@@ -22,6 +22,7 @@ const Sponsors = () => {
   }, []);
 
   return (
+    <Navbar />
     <div className={`sponsors-container ${animationClass}`}>
       <h1 className="sponsors-heading">OUR SPONSORS</h1>
 
