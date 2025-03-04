@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Sponsors.css';
+import Navbar from '../Navbar/Navbar';
 import TS1 from "./ABC.jpg";
 import AS1 from "./AS1.png";
 import MP2 from "./MP2.png";
