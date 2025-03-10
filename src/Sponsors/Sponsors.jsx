@@ -48,7 +48,6 @@ const Sponsors = () => {
           <img className="sponsor-image" src={AS1} alt="Associative Sponsor 2" />
           
         </div>
-        <div className="animated-line"></div>
       </div>
 
       <div className={`section ${animationClass}`}>
@@ -59,7 +58,6 @@ const Sponsors = () => {
           <img className="sponsor-image" src={FP2} alt="Food Partner 2" />
           <img className="sponsor-image" src={FP3} alt="Food Partner 3" />
         </div>
-        <div className="animated-line"></div>
       </div>
 
       <div className={`section ${animationClass}`}>
@@ -70,7 +68,6 @@ const Sponsors = () => {
           <img className="sponsor-image" src={MP2} alt="Media Partner" />
           
         </div>
-        <div className="animated-line"></div>
       </div>
     </div>
     <Footer/>
