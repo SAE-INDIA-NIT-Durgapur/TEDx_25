@@ -12,14 +12,29 @@
   .footer-main-tedx {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    /* align-items: ; */
+    gap: 1rem;
   }
   
   .footer-section-tedx {
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
   }
+  .footer-social {
+    display: flex;
+    align-items: end;
+    
+  }
+
+.footer-social-link{
+    color: #ffffff;
+    font-size: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-social-link:hover {
+    color: rgb(202, 52, 53);
+}
   
   .footer-logo-tedx {
     font-weight: bolder;
@@ -132,4 +147,13 @@
       text-align: right;
     }
   }
+
+  @media (max-width: 480px) {
+    
+
+    .footer-social-link {
+        font-size: 20px;
+    }
+
+}
   
