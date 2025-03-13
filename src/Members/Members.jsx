@@ -17,6 +17,7 @@ import pic12 from "../Components/Images/Members/Vedang1.jpg";
 import pic13 from "../Components/Images/Members/Zeba1.jpg";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import { finalYear } from "./MemberData.js";
 const ImageGallery = () => {
   const imageData = [
     { id: 7, src: pic7, name: "Poorab Kumar" },
@@ -78,7 +79,7 @@ const ImageGallery = () => {
     },
     imageGallery: {
       display: "grid",
-      gridTemplateColumns: `repeat(${getGridColumns()}, 1fr)`,
+      gridTemplateColumns: `repeat(3, 1fr)`,
       gap: "5vw",
     },
     imageCard: (isHovered) => ({
@@ -121,27 +122,52 @@ const ImageGallery = () => {
 
   return (
     <>
-    <Navbar/>
-    <div style={styles.galleryContainer}>
-      <h1 style={styles.heading}>ORGANISERS</h1>
-      <div style={styles.imageGallery}>
-        {imageData.map((image, index) => (
-          <div
-            key={image.id}
-            style={styles.imageCard(hoverStates[index])}
-            onMouseEnter={() => handleMouseEnter(index)}
-            onMouseLeave={() => handleMouseLeave(index)}
-          >
-            <div style={styles.imageWrapper}>
-              <img src={image.src || "/placeholder.svg"} alt={image.name} style={styles.image(hoverStates[index])} />
-              <div style={styles.imageName(hoverStates[index])}>{image.name}</div>
+      <Navbar />
+      <div style={styles.galleryContainer}>
+        <h1 style={styles.heading}>ORGANISERS</h1>
+        <div style={styles.imageGallery}>
+          {finalYear.map((image, index) => (
+            <div
+              key={image.name}
+              style={styles.imageCard(hoverStates[index])}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={() => handleMouseLeave(index)}
+            >
+              <div style={styles.imageWrapper}>
+                <img
+                  src={image.url || "/placeholder.svg"}
+                  alt={image.name}
+                  style={styles.image(hoverStates[index])}
+                />
+                <div style={styles.imageName(hoverStates[index])}>
+                  {image.name}
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+          {imageData.map((image, index) => (
+            <div
+              key={image.id}
+              style={styles.imageCard(hoverStates[index])}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={() => handleMouseLeave(index)}
+            >
+              <div style={styles.imageWrapper}>
+                <img
+                  src={image.src || "/placeholder.svg"}
+                  alt={image.name}
+                  style={styles.image(hoverStates[index])}
+                />
+                <div style={styles.imageName(hoverStates[index])}>
+                  {image.name}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-    <Footer/>
-  </>
+      <Footer />
+    </>
   );
 };
 
