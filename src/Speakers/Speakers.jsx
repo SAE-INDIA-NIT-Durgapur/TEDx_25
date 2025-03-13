@@ -3,25 +3,21 @@ import { motion } from "framer-motion";
 import "./Speakers.css";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import Pooja from "./Pooja_Patel.jpg";
+import Dhanraj from "./Dhanraj.jpg"
 
 const speakersData = [
   {
-    name: "RUPESH MAHORE",
-    image:
-      "https://635124c34eeff312c9586ae2--subtle-rabanadas-ef52a0.netlify.app/static/media/rupesh.b713abf3.jpeg",
-    details: '"Cybersecurity Expert | Speaker at DEFCON 2023"',
+    name: "POOJA PATEL",
+    image: Pooja,
+    details:
+      "❝Certified Financial Planner (CFP) managing 100+ CR AUM, she specializes in investment, retirement, and goal-based planning. She has guided thousands to financial independence and educates a 400K+ online community on wealth creation❞",
   },
   {
-    name: "Lara",
-    image:
-      "https://635124c34eeff312c9586ae2--subtle-rabanadas-ef52a0.netlify.app/static/media/rupesh.b713abf3.jpeg",
-    details: "AI Researcher | Guest Lecturer at MIT",
-  },
-  {
-    name: "Jack",
-    image:
-      "https://635124c34eeff312c9586ae2--subtle-rabanadas-ef52a0.netlify.app/static/media/rupesh.b713abf3.jpeg",
-    details: "Ethical Hacker | Author of 'Hacking Unleashed'",
+    name: "Dhanraj Dadhich",
+    image: Dhanraj,
+    details:
+      "❝A visionary CTO with 24 years of expertise in Blockchain, IoT, Quantum Computing, and AI, driving innovation and revenue growth. His mastery in design, development, and integration turns ambitious visions into reality❞",
   },
 ];
 
