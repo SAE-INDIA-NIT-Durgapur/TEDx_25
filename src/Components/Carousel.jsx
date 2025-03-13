@@ -2,11 +2,11 @@
 
 import { useEffect, useState } from "react"
 import "./Carousel.css"
-import pic from "../Components/Images/pic.jpeg"
+import pic from "../Components/Images/DSC_0812.JPG"
 import leadership from "../Components/Images/Leadership1.png"
-import tedx from "../Components/Images/tedx.jpg"
+import tedx from "../Components/Images/TedxInovation1.png"
 import tedx2 from "../Components/Images/tedx2.jpg"
-import creativity from "../Components/Images/creativity.jpg"
+// import creativity from "../Components/Images/creativity.jpg"
 import idea from "../Components/Images/TedxPhoto3.jpg"
 import vision from "../Components/Images/vision.jpg"
 import design from "../Components/Images/design.jpg"
@@ -23,7 +23,7 @@ const Carousel = ({ direction, speed }) => {
       { word: "Ideas", imageUrl: idea },
       { word: "Innovation", imageUrl: tedx },
       { word: "Design", imageUrl: design },
-      { word: "Creativity", imageUrl: creativity },
+      /*{ word: "Creativity", imageUrl: creativity },*/
       { word: "Technology", imageUrl: tedx2 },
       { word: "Entertainment", imageUrl: pic },
       { word: "Leadership", imageUrl: leadership },
