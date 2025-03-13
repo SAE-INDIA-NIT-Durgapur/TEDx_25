@@ -3,11 +3,11 @@
 import { useEffect, useState } from "react"
 import "./Carousel.css"
 import pic from "../Components/Images/pic.jpeg"
-import leadership from "../Components/Images/leadership.jpg"
+import leadership from "../Components/Images/Leadership1.png"
 import tedx from "../Components/Images/tedx.jpg"
 import tedx2 from "../Components/Images/tedx2.jpg"
 import creativity from "../Components/Images/creativity.jpg"
-import idea from "../Components/Images/idea.jpg"
+import idea from "../Components/Images/TedxPhoto3.jpg"
 import vision from "../Components/Images/vision.jpg"
 import design from "../Components/Images/design.jpg"
 

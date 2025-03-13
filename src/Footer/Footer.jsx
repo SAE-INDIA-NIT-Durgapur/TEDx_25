@@ -110,12 +110,24 @@ function Footer() {
           <div className="contact-container-tedx">
             <div className="contact-info-tedx">
               <span className="contact-label-tedx">Contact:</span>
-              <span className="contact-name-tedx"> John Doe </span>
+              <a
+                className="contact-name-tedx hover:text-red-700"
+                href="https://saenitd.in/"
+              >
+                {" "}
+                SAE-NITD{" "}
+              </a>
               <span className="contact-divider-tedx">|</span>
-              <span className="contact-name-tedx"> Jane Smith </span>
+              <a
+                className="contact-name-tedx hover:text-red-700"
+                href="https://lcnitd.co.in/index.html"
+              >
+                {" "}
+                Lcnitd{" "}
+              </a>
             </div>
 
-            <div className="email-info-tedx">
+            <div className="email-info-tedx ">
               <a href="mailto:tedx@nitdgp.ac.in" className="email-link-tedx">
                 tedx@nitdgp.ac.in
               </a>
