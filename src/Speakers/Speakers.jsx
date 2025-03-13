@@ -27,22 +27,28 @@ const speakersData = [
 
 const pastSpeakersData = [
   {
-    name: "Alice",
+    name: "Ashutosh Pratihast",
     image:
-      "https://635124c34eeff312c9586ae2--subtle-rabanadas-ef52a0.netlify.app/static/media/rupesh.b713abf3.jpeg",
-    details: "Blockchain Specialist | TEDx Speaker",
+      "https://i.ibb.co/nqt3gX9w/Ashutosh.jpg",
+    details: "Youtuber | CEO | TEDx Speaker",
   },
   {
-    name: "Bob",
+    name: "Prachi Tehlan",
     image:
-      "https://635124c34eeff312c9586ae2--subtle-rabanadas-ef52a0.netlify.app/static/media/rupesh.b713abf3.jpeg",
-    details: "Quantum Computing Expert | Author",
+      "https://i.ibb.co/FkY8pgkp/Prachi.jpg",
+    details: "Basketball player | Actress | NGO Founder",
   },
   {
-    name: "Charlie",
+    name: "Sinjini Sengupta",
     image:
-      "https://635124c34eeff312c9586ae2--subtle-rabanadas-ef52a0.netlify.app/static/media/rupesh.b713abf3.jpeg",
-    details: "Data Scientist | Forbes 30 Under 30",
+      "https://i.ibb.co/239gLT2N/Sinjini.jpg",
+    details: "Author | Tedx Speaker",
+  },
+  {
+    name: "Yogendra Singh Rathore",
+    image:
+      "https://i.ibb.co/spWdXQLx/Yogendra.jpg",
+    details: "Mental Wellness Coach | Author | Founder",
   },
   
 ];
@@ -129,4 +135,5 @@ const Speakers = () => {
 };
 
 export default Speakers;
+
 
